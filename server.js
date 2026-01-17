@@ -117,6 +117,10 @@ app.get("/api/content/home", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
+
 // UPDATE HOME CONTENT
 app.post("/api/content/home/update", (req, res) => {
   const { title, subtitle, description } = req.body;
